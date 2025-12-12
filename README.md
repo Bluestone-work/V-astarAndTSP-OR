@@ -8,19 +8,19 @@ This repository contains the implementation of **TSP-OR (Traveling Salesman Prob
 
 ### Indoor Scenario - TSP-OR Navigation
 <p align="center">
-  <img src="gifs/Indoor_TSP-OR.gif" alt="TSP-OR in Indoor Environment" width="600"/>
+  <img src="gif/Indoor_TSP-OR.gif" alt="TSP-OR in Indoor Environment" width="600"/>
   <br>
   <em>TSP-OR successfully navigating through a cluttered indoor environment with dynamic obstacles</em>
 </p>
 
 ### Maze A Scenario - TSP-OR Navigation
 <p align="center">
-  <img src="gifs/MazeA_TSP-OR.gif" alt="TSP-OR in Maze A" width="600"/>
+  <img src="gif/MazeA_TSP-OR.gif" alt="TSP-OR in Maze A" width="600"/>
   <br>
   <em>TSP-OR demonstrating robust multi-waypoint navigation in complex maze layout</em>
 </p>
 
-## 📊 Abstract
+## Abstract
 Autonomous Mobile Robots (AMRs) deployed in intelligent warehouses and similar scenarios must navigate in large-scale, obstacle-dense environments where only the permanent structural layout is known a priori. In such settings, the environment is cluttered with unknown temporary static obstacles and unpredictable dynamic entities, creating a high-density, dynamically evolving scenario. However, existing hybrid planners that rely on pre-calculated geometric paths are prone to frequent global re-planning when unexpected obstacles invalidate the assumed path structure. Meanwhile, standard end-to-end Deep Reinforcement Learning (DRL) methods have limitations of slow convergence and poor long-horizon guidance in large maps. To overcome these limitations, we propose a novel global-local collaborative navigation model for providing long-horizon topological guidance and avoiding fast-changing obstacles. First, the global planner constructs a Voronoi diagram from the a priori known structural map. Second, a Voronoi–A* search is performed to extract sparse key path points that serve as flexible sub-goals. Third, for local control, we introduce the Temporal-State Processed and Optimized Replay DQN (TSP-OR DQN), which integrates temporal feature modeling, motion prediction, and a prioritized replay mechanism to handle partial observability. Finally, extensive evaluation across four environments and four obstacle density levels demonstrates that our framework consistently outperforms state-of-the-art baselines. The proposed method maintains a success rate of 60\%--90\% in highly cluttered indoor and maze layouts and exceeds 90\% in open scenarios. Furthermore, the learned policy exhibits strong generalization to unseen maps and novel obstacle configurations.
 
 ## Project Structure
