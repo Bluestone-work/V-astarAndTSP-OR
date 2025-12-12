@@ -1,0 +1,27 @@
+Improved Global-Local Fusion (IGFL) - Fixed Environment Test Results
+================================================================================
+Environment Config: test_environments_g/test_envs_300_obs50_dobs30_grid_map4.pkl
+Test Environments: 300
+================================================================================
+
+Test Count: 300
+Success Count: 153
+Success Rate: 51.00% (153/300)
+  Wilson 95% CI: [45.4%, 56.6%]
+
+Basic Performance Metrics (Mean [95% CI]):
+  Average Time: 7.04 [5.88, 8.19] s
+  Average Steps: 417.1 [395.9, 438.3]
+  Average Path Length: 476.80 [453.7, 499.9]
+  Average Smoothness: 0.684 [0.663, 0.705]
+
+Real-time Performance Metrics (Mean [95% CI]):
+  T_local (Local Decision Time): 1.896 [1.174, 2.619] ms
+  f_replan (Replanning Frequency): 0.2070 [0.1828, 0.2312] times/step
+  L_rt (End-to-End Control Latency): 15.191 [12.713, 17.669] ms
+
+Task Completion Efficiency:
+  Average Task Completion Time: 7.040 s
+  Real-time System Efficiency: 0.0724 (= Success Rate 51.0% / Task Time 7.040s)
+  Success Cases: 153 (51.0%)
+  Failure Cases: 147
