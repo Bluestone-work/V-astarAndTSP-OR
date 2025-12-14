@@ -1,6 +1,6 @@
 Notice that we are writing the description and tutorials to our source code and other related materials, in order to foster future research in this robot collision avoidance line. They will be found in our repository in Github https://github.com/Bluestone-work/V_AstarAndTSP-OR, before publication.
 
-# V-A* and TSP-OR: Multi-Waypoint Path Planning with Dynamic Obstacles
+# Local View Navigation Based on Global-Local Collaborative Framework in High-Density Scenes
 
 This repository contains the implementation of **TSP-OR (Traveling Salesman Problem with Obstacle avoidance using Reinforcement learning)**, a deep reinforcement learning approach for multi-waypoint path planning in dynamic environments with Voronoi diagram-based path skeleton generation.
 
