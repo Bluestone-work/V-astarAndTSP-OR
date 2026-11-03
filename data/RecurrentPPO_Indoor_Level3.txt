@@ -1,0 +1,27 @@
+RecurrentPPO - Fixed Environment Test Results
+================================================================================
+Environment Config: test_environments_g/test_envs_300_obs50_dobs30_block_grid_map.pkl
+Test Environments: 300
+================================================================================
+
+Test Count: 300
+Success Count: 130
+Success Rate: 43.33% (130/300)
+  Wilson 95% CI: [37.85%, 48.99%]
+
+Basic Performance Metrics (Mean [95% CI]):
+  Average Time: 0.222 [0.201, 0.242] s
+  Average Steps: 123.9 [114.2, 133.5]
+  Average Path Length: 142.52 [131.13, 153.91]
+  Average Smoothness: 0.810 [0.787, 0.833]
+
+Real-time Performance Metrics (Mean [95% CI]):
+  T_local (Local Decision Time): 1.39 [1.35, 1.43] ms
+  f_replan (Replanning Frequency): 0.0000 times/step
+  L_rt (End-to-End Control Latency): 1.77 [1.73, 1.81] ms
+
+Task Completion Efficiency:
+  Average Task Completion Time: 0.219 s
+  Real-time System Efficiency: 1.9771 (= Success Rate 43.3% / Task Time 0.219s)
+  Success Cases: 130 (43.3%)
+  Failure Cases: 170

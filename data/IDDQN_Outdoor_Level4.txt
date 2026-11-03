@@ -1,0 +1,29 @@
+IDDQN (Paper 2 Method) - Fixed Environment Test Results
+================================================================================
+Environment Config: test_envs_300_obs50_dobs50_block_grid_map3.pkl
+Map: grid_map3.txt
+Model: models/paper2_dqn_model_map3_final.pth
+Path Nodes: 6
+================================================================================
+
+Test Count: 300
+Success Count: 276
+Success Rate: 92.00% (276/300)
+  Wilson 95% CI: [88.4%, 94.6%]
+
+Basic Performance Metrics (Mean [95% CI]):
+  Average Time: 2.91 [2.68, 3.34] s
+  Average Steps: 173.6 [170.7, 176.6]
+  Average Path Length: 211.40 [209.2, 213.5]
+  Average Smoothness: 0.857 [0.852, 0.863]
+
+Real-time Performance Metrics (Mean [95% CI]):
+  T_local (Local Decision Time): 1.058 [0.985, 1.132] ms
+  f_replan (Replanning Frequency): 0.0186 [0.0130, 0.0242] times/step
+  L_rt (End-to-End Control Latency): 15.065 [14.856, 15.273] ms
+
+Task Completion Efficiency:
+  Average Task Completion Time: 2.910 s
+  Real-time System Efficiency: 0.3162 (= Success Rate 92.0% / Task Time 2.910s)
+  Success Cases: 276 (92.0%)
+  Failure Cases: 24

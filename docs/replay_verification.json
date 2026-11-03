@@ -1,0 +1,28 @@
+{
+  "scope": "Replay subsystem only: submitted Eqs.18-19 and replay-related Algorithm3 operations",
+  "base_commit": "54925d7abf2fd72d3f118f73aaba4c3fe2a3ef95",
+  "entry_point": "agents.RainbowDQN",
+  "buffer": "manuscript_replay.ManuscriptReplay",
+  "tests_passed": 38,
+  "tests_failed": 0,
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest tests/test_manuscript_replay.py -q",
+  "legacy_source_sha256": "19f1070e31254ad4233e346bea6eeba8f54c1be79d2db9a574dbb2bc996de797",
+  "changes": [
+    "lambda=1 reward and TD logarithms plus a 1e-5 positive floor",
+    "single FIFO buffer with direct positive-priority normalization",
+    "formula-based initial priority including the first transition",
+    "terminal mask and one-step ordinary DQN target",
+    "sampled priority refresh from pre-gradient TD errors",
+    "full configured minibatch with replacement",
+    "unweighted squared TD error, without IS or auxiliary buffer"
+  ],
+  "local_article_arm_crosscheck": {
+    "checked": "100 insertions, FIFO wrap, 64 identical initial sampled records, same priority-refresh equation",
+    "max_sampling_probability_difference_after_refresh": 2.6366364300201006e-10,
+    "note": "Numerical float32 reward storage versus float64 priority calculations; no bitwise training identity claim"
+  },
+  "performance_results": "Not included; ongoing one-seed local comparison is not evidence of reproducible superiority",
+  "full_manuscript_alignment_claim": false,
+  "status": "Historical replay-only check; not the current full-code verification",
+  "current_verification": "experiments/results/aligned_v2/verification/verification_manifest.json"
+}

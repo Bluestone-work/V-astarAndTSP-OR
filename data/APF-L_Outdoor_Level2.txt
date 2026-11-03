@@ -1,0 +1,27 @@
+Potential Field (APF-L) - Fixed Environment Test Results
+================================================================================
+Environment Config: test_environments_g/test_envs_300_obs50_dobs30_grid_map3.pkl
+Test Environments: 300
+================================================================================
+
+Test Count: 300
+Success Count: 238
+Success Rate: 79.30% (238/300)
+  Wilson 95% CI: [74.4%, 83.5%]
+
+Basic Performance Metrics (Mean [95% CI]):
+  Average Time: 3.30 [2.78, 3.81] s
+  Average Steps: 206.3 [193.1, 219.4]
+  Average Path Length: 237.60 [220.9, 254.3]
+  Average Smoothness: 0.804 [0.782, 0.826]
+
+Real-time Performance Metrics (Mean [95% CI]):
+  T_local (Local Decision Time): 0.071 [0.070, 0.072] ms
+  f_replan (Replanning Frequency): 0.0928 [0.0683, 0.1173] times/step
+  L_rt (End-to-End Control Latency): 14.381 [12.861, 15.902] ms
+
+Task Completion Efficiency:
+  Average Task Completion Time: 3.300 s
+  Real-time System Efficiency: 0.2403 (= Success Rate 79.3% / Task Time 3.300s)
+  Success Cases: 238 (79.3%)
+  Failure Cases: 62

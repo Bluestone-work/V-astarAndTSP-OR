@@ -1,0 +1,29 @@
+Proposed Method (TSP-OR) - Fixed Environment Test Results
+================================================================================
+Environment Config: test_environments_g/test_envs_300_obs50_dobs0_grid_map2.pkl
+Model Path: models/dqn_model_ALL_newtrain_map2.pth
+Test Environments: 300
+================================================================================
+
+Test Count: 300
+Success Count: 277
+Success Rate: 92.30% (277/300)
+  Wilson 95% CI: [88.8%, 94.8%]
+
+Basic Performance Metrics (Mean [95% CI]):
+  Average Time: 2.11 [2.00, 2.22] s
+  Average Steps: 287.8 [287.3, 288.3]
+  Average Path Length: 334.00 [333.3, 334.8]
+  Average Smoothness: 0.868 [0.867, 0.869]
+
+Real-time Performance Metrics (Mean [95% CI]):
+  T_local (Local Decision Time): 0.38 [0.37, 0.38] ms
+  f_replan (Replanning Frequency): 0.0269 [0.0258, 0.0280] times/step
+  L_rt (Control Latency): 6.119 [6.042, 6.195] ms
+  H_react (Dynamic Obstacle Reaction Steps): N/A (No encounter)
+
+🎯 Task Completion Efficiency:
+  Average Task Completion Time: 2.110 s
+  Real-time System Efficiency: 0.4374 (= Success Rate 92.3% / Task Time 2.110s)
+  Success Cases: 277 (92.3%)
+  Failure Cases: 23 (7.7%)

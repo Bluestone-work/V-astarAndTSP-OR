@@ -1,0 +1,28 @@
+M-DQN - Fixed Environment Test Results
+================================================================================
+Environment Config: ./test_environments_g/test_envs_300_obs50_dobs30_block_grid_map4.pkl
+Model Path: models/paper_dqn_model_noc_ep1000.pth
+Test Environments: 300
+================================================================================
+
+Test Count: 300
+Success Count: 160
+Success Rate: 53.30% (160/300)
+  Wilson 95% CI: [47.7%, 58.9%]
+
+Basic Performance Metrics (Mean [95% CI]):
+  Average Time: 5.82 [4.86, 6.77] s
+  Average Steps: 416.4 [391.8, 440.9]
+  Average Path Length: 540.00 [506.3, 573.7]
+  Average Smoothness: 0.704 [0.683, 0.725]
+
+Real-time Performance Metrics (Mean [95% CI]):
+  T_local (Local Decision Time): 1.08 [0.99, 1.18] ms
+  f_replan (Replanning Frequency): 0.1441 [0.1193, 0.1689] times/step
+  L_rt (Control Latency): 12.577 [12.331, 12.823] ms
+
+Task Completion Efficiency:
+  Average Task Completion Time: 5.820 s
+  Real-time System Efficiency: 0.0916 (= Success Rate 53.3% / Task Time 5.820s)
+  Success Cases: 160 (53.3%)
+  Failure Cases: 140 (46.7%)
